@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A457BDBA27299739000739A1 /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457BDB927299739000739A1 /* NavigationConfigurator.swift */; };
+		A457BDBC27299A99000739A1 /* NavigationBarTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A457BDBB27299A99000739A1 /* NavigationBarTheme.swift */; };
+		A4A7F5AA2722F726006018D0 /* AWSPlusApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5A92722F726006018D0 /* AWSPlusApp.swift */; };
+		A4A7F5AC2722F726006018D0 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5AB2722F726006018D0 /* AccountListView.swift */; };
+		A4A7F5AE2722F72A006018D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A7F5AD2722F72A006018D0 /* Assets.xcassets */; };
+		A4A7F5B12722F72A006018D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A7F5B02722F72A006018D0 /* Preview Assets.xcassets */; };
+		A4A7F5B82723158B006018D0 /* DynamoDBItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5B72723158B006018D0 /* DynamoDBItemView.swift */; };
+		A4A7F5BF27231D89006018D0 /* AWSCore in Frameworks */ = {isa = PBXBuildFile; productRef = A4A7F5BE27231D89006018D0 /* AWSCore */; };
+		A4A7F5C127231D89006018D0 /* AWSDynamoDB in Frameworks */ = {isa = PBXBuildFile; productRef = A4A7F5C027231D89006018D0 /* AWSDynamoDB */; };
+		A4A7F5C327231E74006018D0 /* DynamoDBService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5C227231E74006018D0 /* DynamoDBService.swift */; };
+		A4A7F5C527258E60006018D0 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5C427258E60006018D0 /* PersistenceController.swift */; };
+		A4A7F5C727258EE8006018D0 /* DynamoDBItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5C627258EE8006018D0 /* DynamoDBItem.swift */; };
+		A4A7F5CA27258F3B006018D0 /* AWSAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5C927258F3B006018D0 /* AWSAccount.swift */; };
+		A4A7F5CF27259C21006018D0 /* AWSAccountList_CoreModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5CD27259C21006018D0 /* AWSAccountList_CoreModel.xcdatamodeld */; };
+		A4A7F5D227259E2E006018D0 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5D127259E2E006018D0 /* AccountView.swift */; };
+		A4A7F5D42725A3AA006018D0 /* AccountAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5D32725A3AA006018D0 /* AccountAddView.swift */; };
+		A4A7F5D62725A755006018D0 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5D52725A755006018D0 /* AccountService.swift */; };
+		A4A7F5DB2725AC2A006018D0 /* AWSAuthCore in Frameworks */ = {isa = PBXBuildFile; productRef = A4A7F5DA2725AC2A006018D0 /* AWSAuthCore */; };
+		A4A7F5DF2725C61E006018D0 /* DynamoDBTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5DE2725C61E006018D0 /* DynamoDBTable.swift */; };
+		A4A7F5E12725CDBF006018D0 /* DynamoDBTableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5E02725CDBF006018D0 /* DynamoDBTableListView.swift */; };
+		A4A7F5E32725CDE1006018D0 /* DynamoDBTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5E22725CDE1006018D0 /* DynamoDBTableView.swift */; };
+		A4A7F5E62726C8A7006018D0 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = A4A7F5E52726C8A7006018D0 /* SwiftyJSON */; };
+		A4A7F5E82726F59B006018D0 /* AccountDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5E72726F59B006018D0 /* AccountDisplay.swift */; };
+		A4A7F5EA27270721006018D0 /* RegionPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5E927270721006018D0 /* RegionPicker.swift */; };
+		A4A7F5ED27273ABF006018D0 /* DynamoDBColumnSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5EC27273ABF006018D0 /* DynamoDBColumnSelector.swift */; };
+		A4A7F5EF2727406B006018D0 /* DynamoDBColumnRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A7F5EE2727406B006018D0 /* DynamoDBColumnRow.swift */; };
+		A4EF7513277388E900B4A0D9 /* DynamoDBTableQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF7512277388E900B4A0D9 /* DynamoDBTableQueryView.swift */; };
+		A4EF751527739BA800B4A0D9 /* DynamoDBItemsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4EF751427739BA800B4A0D9 /* DynamoDBItemsResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A457BDB927299739000739A1 /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
+		A457BDBB27299A99000739A1 /* NavigationBarTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBarTheme.swift; sourceTree = "<group>"; };
+		A4A7F5A62722F726006018D0 /* AWSPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A7F5A92722F726006018D0 /* AWSPlusApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSPlusApp.swift; sourceTree = "<group>"; };
+		A4A7F5AB2722F726006018D0 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		A4A7F5AD2722F72A006018D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A7F5B02722F72A006018D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A4A7F5B72723158B006018D0 /* DynamoDBItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBItemView.swift; sourceTree = "<group>"; };
+		A4A7F5C227231E74006018D0 /* DynamoDBService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBService.swift; sourceTree = "<group>"; };
+		A4A7F5C427258E60006018D0 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		A4A7F5C627258EE8006018D0 /* DynamoDBItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoDBItem.swift; sourceTree = "<group>"; };
+		A4A7F5C927258F3B006018D0 /* AWSAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AWSAccount.swift; sourceTree = "<group>"; };
+		A4A7F5CE27259C21006018D0 /* AWSAccount_CoreModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AWSAccount_CoreModel.xcdatamodel; sourceTree = "<group>"; };
+		A4A7F5D127259E2E006018D0 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		A4A7F5D32725A3AA006018D0 /* AccountAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountAddView.swift; sourceTree = "<group>"; };
+		A4A7F5D52725A755006018D0 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		A4A7F5DE2725C61E006018D0 /* DynamoDBTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBTable.swift; sourceTree = "<group>"; };
+		A4A7F5E02725CDBF006018D0 /* DynamoDBTableListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DynamoDBTableListView.swift; sourceTree = "<group>"; };
+		A4A7F5E22725CDE1006018D0 /* DynamoDBTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBTableView.swift; sourceTree = "<group>"; };
+		A4A7F5E72726F59B006018D0 /* AccountDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDisplay.swift; sourceTree = "<group>"; };
+		A4A7F5E927270721006018D0 /* RegionPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionPicker.swift; sourceTree = "<group>"; };
+		A4A7F5EC27273ABF006018D0 /* DynamoDBColumnSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBColumnSelector.swift; sourceTree = "<group>"; };
+		A4A7F5EE2727406B006018D0 /* DynamoDBColumnRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBColumnRow.swift; sourceTree = "<group>"; };
+		A4EF7512277388E900B4A0D9 /* DynamoDBTableQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBTableQueryView.swift; sourceTree = "<group>"; };
+		A4EF751427739BA800B4A0D9 /* DynamoDBItemsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamoDBItemsResult.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A7F5A32722F726006018D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A7F5C127231D89006018D0 /* AWSDynamoDB in Frameworks */,
+				A4A7F5DB2725AC2A006018D0 /* AWSAuthCore in Frameworks */,
+				A4A7F5E62726C8A7006018D0 /* SwiftyJSON in Frameworks */,
+				A4A7F5BF27231D89006018D0 /* AWSCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A457BDB82729971D000739A1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5E927270721006018D0 /* RegionPicker.swift */,
+				A457BDB927299739000739A1 /* NavigationConfigurator.swift */,
+				A457BDBB27299A99000739A1 /* NavigationBarTheme.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A4A7F59D2722F726006018D0 = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5A82722F726006018D0 /* AWSPlus */,
+				A4A7F5A72722F726006018D0 /* Products */,
+				A4A7F5D72725ABAF006018D0 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A7F5A72722F726006018D0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5A62722F726006018D0 /* AWSPlus.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A7F5A82722F726006018D0 /* AWSPlus */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5C827258F05006018D0 /* Model */,
+				A4A7F5A92722F726006018D0 /* AWSPlusApp.swift */,
+				A4A7F5E72726F59B006018D0 /* AccountDisplay.swift */,
+				A4A7F5D32725A3AA006018D0 /* AccountAddView.swift */,
+				A4A7F5D127259E2E006018D0 /* AccountView.swift */,
+				A4A7F5AB2722F726006018D0 /* AccountListView.swift */,
+				A4A7F5AD2722F72A006018D0 /* Assets.xcassets */,
+				A4A7F5AF2722F72A006018D0 /* Preview Content */,
+				A4A7F5EB27273A8A006018D0 /* DynamoDBGroup */,
+				A457BDB82729971D000739A1 /* Utils */,
+			);
+			path = AWSPlus;
+			sourceTree = "<group>";
+		};
+		A4A7F5AF2722F72A006018D0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5B02722F72A006018D0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A4A7F5C827258F05006018D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5D027259D22006018D0 /* CoreData */,
+				A4A7F5C627258EE8006018D0 /* DynamoDBItem.swift */,
+				A4A7F5C227231E74006018D0 /* DynamoDBService.swift */,
+				A4A7F5D52725A755006018D0 /* AccountService.swift */,
+				A4A7F5C427258E60006018D0 /* PersistenceController.swift */,
+				A4A7F5DE2725C61E006018D0 /* DynamoDBTable.swift */,
+				A4EF751427739BA800B4A0D9 /* DynamoDBItemsResult.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A4A7F5D027259D22006018D0 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5C927258F3B006018D0 /* AWSAccount.swift */,
+				A4A7F5CD27259C21006018D0 /* AWSAccountList_CoreModel.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		A4A7F5D72725ABAF006018D0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4A7F5EB27273A8A006018D0 /* DynamoDBGroup */ = {
+			isa = PBXGroup;
+			children = (
+				A4A7F5B72723158B006018D0 /* DynamoDBItemView.swift */,
+				A4EF7512277388E900B4A0D9 /* DynamoDBTableQueryView.swift */,
+				A4A7F5E02725CDBF006018D0 /* DynamoDBTableListView.swift */,
+				A4A7F5E22725CDE1006018D0 /* DynamoDBTableView.swift */,
+				A4A7F5EC27273ABF006018D0 /* DynamoDBColumnSelector.swift */,
+				A4A7F5EE2727406B006018D0 /* DynamoDBColumnRow.swift */,
+			);
+			path = DynamoDBGroup;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A7F5A52722F726006018D0 /* AWSPlus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A7F5B42722F72A006018D0 /* Build configuration list for PBXNativeTarget "AWSPlus" */;
+			buildPhases = (
+				A4A7F5A22722F726006018D0 /* Sources */,
+				A4A7F5A32722F726006018D0 /* Frameworks */,
+				A4A7F5A42722F726006018D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AWSPlus;
+			packageProductDependencies = (
+				A4A7F5BE27231D89006018D0 /* AWSCore */,
+				A4A7F5C027231D89006018D0 /* AWSDynamoDB */,
+				A4A7F5DA2725AC2A006018D0 /* AWSAuthCore */,
+				A4A7F5E52726C8A7006018D0 /* SwiftyJSON */,
+			);
+			productName = AWSPlus;
+			productReference = A4A7F5A62722F726006018D0 /* AWSPlus.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A7F59E2722F726006018D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A4A7F5A52722F726006018D0 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = A4A7F5A12722F726006018D0 /* Build configuration list for PBXProject "AWSPlus" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4A7F59D2722F726006018D0;
+			packageReferences = (
+				A4A7F5BD27231D89006018D0 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */,
+				A4A7F5E42726C8A7006018D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+			);
+			productRefGroup = A4A7F5A72722F726006018D0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4A7F5A52722F726006018D0 /* AWSPlus */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A7F5A42722F726006018D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A7F5B12722F72A006018D0 /* Preview Assets.xcassets in Resources */,
+				A4A7F5AE2722F72A006018D0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A7F5A22722F726006018D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A7F5EF2727406B006018D0 /* DynamoDBColumnRow.swift in Sources */,
+				A4A7F5D42725A3AA006018D0 /* AccountAddView.swift in Sources */,
+				A4A7F5C527258E60006018D0 /* PersistenceController.swift in Sources */,
+				A4A7F5D62725A755006018D0 /* AccountService.swift in Sources */,
+				A4A7F5AC2722F726006018D0 /* AccountListView.swift in Sources */,
+				A4EF7513277388E900B4A0D9 /* DynamoDBTableQueryView.swift in Sources */,
+				A4A7F5D227259E2E006018D0 /* AccountView.swift in Sources */,
+				A4A7F5ED27273ABF006018D0 /* DynamoDBColumnSelector.swift in Sources */,
+				A457BDBA27299739000739A1 /* NavigationConfigurator.swift in Sources */,
+				A4A7F5DF2725C61E006018D0 /* DynamoDBTable.swift in Sources */,
+				A4A7F5CF27259C21006018D0 /* AWSAccountList_CoreModel.xcdatamodeld in Sources */,
+				A4A7F5CA27258F3B006018D0 /* AWSAccount.swift in Sources */,
+				A4A7F5AA2722F726006018D0 /* AWSPlusApp.swift in Sources */,
+				A4EF751527739BA800B4A0D9 /* DynamoDBItemsResult.swift in Sources */,
+				A4A7F5B82723158B006018D0 /* DynamoDBItemView.swift in Sources */,
+				A4A7F5E12725CDBF006018D0 /* DynamoDBTableListView.swift in Sources */,
+				A4A7F5C727258EE8006018D0 /* DynamoDBItem.swift in Sources */,
+				A4A7F5C327231E74006018D0 /* DynamoDBService.swift in Sources */,
+				A4A7F5E32725CDE1006018D0 /* DynamoDBTableView.swift in Sources */,
+				A4A7F5E82726F59B006018D0 /* AccountDisplay.swift in Sources */,
+				A4A7F5EA27270721006018D0 /* RegionPicker.swift in Sources */,
+				A457BDBC27299A99000739A1 /* NavigationBarTheme.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A4A7F5B22722F72A006018D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4A7F5B32722F72A006018D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4A7F5B52722F72A006018D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AWSPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 3VY899RQ89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libjch.AWSPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4A7F5B62722F72A006018D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AWSPlus/Preview Content\"";
+				DEVELOPMENT_TEAM = 3VY899RQ89;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.libjch.AWSPlus;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A7F5A12722F726006018D0 /* Build configuration list for PBXProject "AWSPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A7F5B22722F72A006018D0 /* Debug */,
+				A4A7F5B32722F72A006018D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A7F5B42722F72A006018D0 /* Build configuration list for PBXNativeTarget "AWSPlus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A7F5B52722F72A006018D0 /* Debug */,
+				A4A7F5B62722F72A006018D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4A7F5BD27231D89006018D0 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-sdk-ios-spm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		A4A7F5E42726C8A7006018D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4A7F5BE27231D89006018D0 /* AWSCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A7F5BD27231D89006018D0 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSCore;
+		};
+		A4A7F5C027231D89006018D0 /* AWSDynamoDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A7F5BD27231D89006018D0 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSDynamoDB;
+		};
+		A4A7F5DA2725AC2A006018D0 /* AWSAuthCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A7F5BD27231D89006018D0 /* XCRemoteSwiftPackageReference "aws-sdk-ios-spm" */;
+			productName = AWSAuthCore;
+		};
+		A4A7F5E52726C8A7006018D0 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A7F5E42726C8A7006018D0 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		A4A7F5CD27259C21006018D0 /* AWSAccountList_CoreModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4A7F5CE27259C21006018D0 /* AWSAccount_CoreModel.xcdatamodel */,
+			);
+			currentVersion = A4A7F5CE27259C21006018D0 /* AWSAccount_CoreModel.xcdatamodel */;
+			path = AWSAccountList_CoreModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4A7F59E2722F726006018D0 /* Project object */;
+}
